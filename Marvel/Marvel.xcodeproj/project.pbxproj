@@ -15,6 +15,9 @@
 		2D3B76562843C0BA0047738E /* MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B76552843C0BA0047738E /* MarvelUITests.swift */; };
 		2D3B76582843C0BA0047738E /* MarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B76572843C0BA0047738E /* MarvelUITestsLaunchTests.swift */; };
 		2D3B766B2843C2D90047738E /* MarvelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B766A2843C2D90047738E /* MarvelListViewController.swift */; };
+		2D6882F12843DC0700295B2E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6882EC2843DC0700295B2E /* NetworkService.swift */; };
+		2D6882F22843DC0700295B2E /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6882ED2843DC0700295B2E /* DataRequest.swift */; };
+		2D6882F32843DC0700295B2E /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6882EE2843DC0700295B2E /* ErrorResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2D3B76552843C0BA0047738E /* MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITests.swift; sourceTree = "<group>"; };
 		2D3B76572843C0BA0047738E /* MarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2D3B766A2843C2D90047738E /* MarvelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListViewController.swift; sourceTree = "<group>"; };
+		2D6882EC2843DC0700295B2E /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2D6882ED2843DC0700295B2E /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		2D6882EE2843DC0700295B2E /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,10 @@
 		2D3B76332843C0BA0047738E /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				2D6882E72843DC0700295B2E /* NetworkLayer */,
+				2D3B766E2843C6C00047738E /* Data Layer */,
+				2D3B766D2843C6B60047738E /* BusinessLogic Layer */,
+				2D3B766C2843C6B20047738E /* Service Layer */,
 				2D3B76642843C15F0047738E /* Presentation Layer */,
 				2D3B763D2843C0BA0047738E /* Assets.xcassets */,
 				2D3B76422843C0BA0047738E /* Info.plist */,
@@ -170,6 +180,53 @@
 				2D3B766A2843C2D90047738E /* MarvelListViewController.swift */,
 			);
 			path = "Marvel List";
+			sourceTree = "<group>";
+		};
+		2D3B766C2843C6B20047738E /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
+		2D3B766D2843C6B60047738E /* BusinessLogic Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "BusinessLogic Layer";
+			sourceTree = "<group>";
+		};
+		2D3B766E2843C6C00047738E /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		2D6882E72843DC0700295B2E /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				2D6882E82843DC0700295B2E /* WebServices */,
+				2D6882EB2843DC0700295B2E /* Setup */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		2D6882E82843DC0700295B2E /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		2D6882EB2843DC0700295B2E /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				2D6882EC2843DC0700295B2E /* NetworkService.swift */,
+				2D6882ED2843DC0700295B2E /* DataRequest.swift */,
+				2D6882EE2843DC0700295B2E /* ErrorResponse.swift */,
+			);
+			path = Setup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,9 +359,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6882F22843DC0700295B2E /* DataRequest.swift in Sources */,
 				2D3B766B2843C2D90047738E /* MarvelListViewController.swift in Sources */,
 				2D3B76352843C0BA0047738E /* AppDelegate.swift in Sources */,
 				2D3B76372843C0BA0047738E /* SceneDelegate.swift in Sources */,
+				2D6882F12843DC0700295B2E /* NetworkService.swift in Sources */,
+				2D6882F32843DC0700295B2E /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
