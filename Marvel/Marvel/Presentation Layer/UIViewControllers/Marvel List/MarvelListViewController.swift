@@ -20,6 +20,19 @@ class MarvelListViewController: UIViewController {
         super.viewDidLoad()
         style()
         layout()
+        
+        
+        
+            let request = CharactersRequest()
+            DefaultNetworkService().request(request) { [weak self] result in
+                switch result {
+                case .success(let res):
+                    print(res)
+                case .failure(let _):
+                    print("error")
+                }
+            }
+        
     }
     
 }
